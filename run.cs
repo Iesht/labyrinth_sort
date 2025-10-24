@@ -164,8 +164,10 @@ public class Program
     private static bool IsWayBlocked(char[] corridor, int from, int to, int direction)
     {
         for (var i = from + direction; i != to; i += direction)
+        {
             if (corridor[i] != '.')
-                return true;
+                return true; 
+        }
         return false;
     }
 
