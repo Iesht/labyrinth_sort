@@ -35,6 +35,7 @@ public class Program
         {
             var corridor = new char[Corridor.Length];
             Array.Copy(Corridor, corridor, Corridor.Length);
+            
             var rooms = new char[Rooms.Length][];
             for (var i = 0; i < Rooms.Length; i++)
             {
