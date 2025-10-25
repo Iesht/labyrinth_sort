@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LabyrinthSort;
 
-public class Program
+class Program
 {
     private static readonly int[] RoomEntrances = [2, 4, 6, 8];
     private static readonly Dictionary<char, int> Energy = new()
@@ -190,7 +190,7 @@ public class Program
         return new State(corridor, rooms);
     }
     
-    public static int Solve(List<string> lines)
+    static int Solve(List<string> lines)
     {
         var start =  ParseInputToState(lines);
         
@@ -219,7 +219,7 @@ public class Program
         return -1;
     }
 
-    public static void Main()
+    static void Main()
     {
         var lines = new List<string>();
         string line;
